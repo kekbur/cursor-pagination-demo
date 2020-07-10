@@ -12,9 +12,9 @@ Launch the main class `com.github.kekbur.cursorpaginationdemo.Application`
 
 | Description | URL |
 | --- | --- |
-| Retrieve first 10 cats | [http://localhost:8080/cats] |
-| Retrieve first 10 cats whose name contains "3" | [http://localhost:8080/cats?filter=%7B%22field%22:%22name%22,%22values%22:%5B%223%22%5D,%22kind%22:%22CONTAINS%22%7D] |
-| Retrieve all cats (no pagination) | [http://localhost:8080/all-cats] |
+| Retrieve first 10 cats | http://localhost:8080/cats |
+| Retrieve first 10 cats whose name contains "3" | http://localhost:8080/cats?filter=%7B%22field%22:%22name%22,%22values%22:%5B%223%22%5D,%22kind%22:%22CONTAINS%22%7D |
+| Retrieve all cats (no pagination) | http://localhost:8080/all-cats |
 
 The above requests sort cats by age (ascending) and secondarily by id (descending).
 
@@ -68,4 +68,4 @@ Retrieving the next 10 cats:
 ```sql
 <...> where (7, cat0_.id) < (cat0_.age, 35) and 0=0 and (cat0_.name like '%3%') order by cat0_.age ASC, cat0_.id DESC limit 10
 ```
-Take note how the desired rows are found using a `where` condition instead of using a numeric offset. Such queries can be executed more efficiently as long as the tables have appropriate indexes. See [https://use-the-index-luke.com/sql/partial-results/fetch-next-page] for more information.
+Take note how the desired rows are found using a `where` condition instead of using a numeric offset. Such queries can be executed more efficiently as long as the tables have appropriate indexes. See https://use-the-index-luke.com/sql/partial-results/fetch-next-page for more information.
