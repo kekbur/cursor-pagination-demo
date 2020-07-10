@@ -1,6 +1,6 @@
 # cursor-pagination-demo
 
-This project demonstrates how to use [keyset pagination without numeric offsets](https://use-the-index-luke.com/no-offset) together with blaze-persistence and Spring Boot. This approach is also called cursor based pagination or seek pagination and is suitable for example for infinite scrolling.
+This project demonstrates how to use [keyset pagination without numeric offsets](https://use-the-index-luke.com/no-offset) together with [blaze-persistence](https://github.com/Blazebit/blaze-persistence) and [Spring Boot](https://github.com/spring-projects/spring-boot). This approach is also called cursor based pagination or seek pagination and is suitable for example for infinite scrolling.
 
 Adapted from [blaze-persistence-examples-spring-hateoas](https://github.com/Blazebit/blaze-persistence/tree/master/examples/spring-hateoas).
 
