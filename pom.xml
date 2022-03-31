@@ -8,7 +8,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>14</maven.compiler.source>
 		<maven.compiler.target>14</maven.compiler.target>
-		<spring-boot.version>2.2.2.RELEASE</spring-boot.version>
+		<spring-boot.version>2.5.12</spring-boot.version>
 		<blaze-persistence.version>1.5.0-Alpha5</blaze-persistence.version>
 
 		<start-class>com.github.kekbur.cursorpaginationdemo.Application</start-class>
